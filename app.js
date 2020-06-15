@@ -20,7 +20,7 @@ alert(bio);
 var myFavoriteFood = ["PIZZA,PIZZa,PIZ,PI,P"];
 alert(myFavoriteFood " <br>");
 //6
-var email = "abbas.tariq514@gmail.com";
+var email = "contactattariq@gmail.com";
 alert("My email address is " + email);
 //7
 var book = "A smarter way to learn JavaScript";
