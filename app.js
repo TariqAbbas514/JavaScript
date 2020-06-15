@@ -322,12 +322,73 @@ for(var i=1; i<=length; i++){
  }
  }
 
- //Task7
+  //Task7
 var A = ["cake", "apple pie", "cookie", "chips", "patties"];
- var i = +prompt("Welcome to ABC Bakery, what do you wanr to order sir ma'am?");
-if (i === A.includes("cake") || i === A.includes("apple pie") || i === A.includes("cookie")
- || i === A.includes("chips") || i === A.includes("patties")) {
- document.write(i+ " is available at index " + indexOf(i) + " in our bakery");
-}else{
-	document.write("no");
+ var i = prompt("Welcome to ABC Bakery, what do you wanr to order sir ma'am?");
+if (i === A[0]) {
+ document.write(i+ " is available at index 0 in our bakery");
+}else if (i === A[1]){
+	document.write(i+ " is available at index 1 in our bakery");
+}else if (i === A[2]){
+	document.write(i+ " is available at index 2 in our bakery");
+}else if (i === A[3]){
+	document.write(i+ " is available at index 3 in our bakery");
+}else if (i === A[4]){
+	document.write(i+ " is available at index 4 in our bakery");
 }
+else{
+	document.write("We are sorry. " +i+ " is not available in our bakery");
+}
+
+//Task 10
+var i;
+for(i = 5; i <= 100; i=i+5){
+	document.write(i+ ",");
+}
+
+//chapter3
+//Task1
+age = 24;
+alert("I am " +age+ " years old");
+
+
+// ..Task2
+
+function VisitCounter(){
+
+var visits = GetCookie("counter");
+
+if (!visits) { visits = 1;
+
+alert("By the way, this is your first time here.");
+
+}
+
+else {
+
+visits = parseInt(visits) + 1;
+
+alert("You have visited this site " + visits + " times.");}
+
+setCookie("counter", visits,expdate);
+    
+     }
+      VisitCounter();
+
+// // ..Task3
+var birthYear = 1993;
+document.write("My birth year is " +birthYear+ "<br>");
+document.write("Data type to declared variable is number")	; document.write("<br><br>");
+
+
+//Task4
+
+var visitorName = prompt("Enter Your Name", "John Doe");
+var productTitle = prompt("Enter product you want to order", "T-shirt(s)");
+var productQuantity = prompt("Enter product Quantity");
+
+document.write(visitorName+ " ordered " +productQuantity+ " " +productTitle+ " on XYZ Clothing store.");
+
+
+
+
