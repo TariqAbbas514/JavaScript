@@ -292,6 +292,14 @@ document.write("<h2>String:</h2>");
 document.write(arr.join(" "));
 
 
+//Task15
+var arrMobile= ["Apple", "Samsung", "Motorola", "Sony", "Haier"];
+document.write("<select>");
+for (var i = 0; i < arrMobile.length; i++) {
+	document.write("<option>" +arrMobile[i]+ "</option>")
+}
+document.write("</select>");
+
 // chapter17-20
 //Task3
 for (var i = 1; i <= 10; i++) {
