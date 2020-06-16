@@ -290,6 +290,7 @@ document.write("<h2>Array:</h2>");
 document.write(arr);
 document.write("<h2>String:</h2>");
 document.write(arr.join(" "));
+document.write("<br><br>");
 
 
 //Task15
@@ -299,7 +300,7 @@ for (var i = 0; i < arrMobile.length; i++) {
 	document.write("<option>" +arrMobile[i]+ "</option>")
 }
 document.write("</select>");
-
+document.write("<br><br>");
 // chapter17-20
 //Task3
 for (var i = 1; i <= 10; i++) {
@@ -347,12 +348,14 @@ if (i === A[0]) {
 else{
 	document.write("We are sorry. " +i+ " is not available in our bakery");
 }
+document.write("<br><br>");
 
 //Task 10
 var i;
 for(i = 5; i <= 100; i=i+5){
 	document.write(i+ ",");
 }
+document.write("<br><br>");
 
 //chapter3
 //Task1
@@ -360,30 +363,22 @@ age = 24;
 alert("I am " +age+ " years old");
 
 
-// ..Task2
+// // ..Task2
 
-function VisitCounter(){
+// function VisitCounter(){
 
-var visits = GetCookie("counter");
+// var visits;
 
-if (!visits) { visits = 1;
+// if (visits != -1){
 
-alert("By the way, this is your first time here.");
+// visits = parseInt(visits) + 1;
 
-}
-
-else {
-
-visits = parseInt(visits) + 1;
-
-alert("You have visited this site " + visits + " times.");}
-
-setCookie("counter", visits,expdate);
+// alert("You have visited this site " + visits + " times.");}
     
-     }
-      VisitCounter();
+//      }
+//       VisitCounter();
 
-// // ..Task3
+// ..Task3
 var birthYear = 1993;
 document.write("My birth year is " +birthYear+ "<br>");
 document.write("Data type to declared variable is number")	; document.write("<br><br>");
@@ -396,3 +391,18 @@ var productTitle = prompt("Enter product you want to order", "T-shirt(s)");
 var productQuantity = prompt("Enter product Quantity");
 
 document.write(visitorName+ " ordered " +productQuantity+ " " +productTitle+ " on XYZ Clothing store.");
+
+document.write("<br><br>");
+
+
+
+
+
+
+
+
+
+
+
+
+
