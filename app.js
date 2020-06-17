@@ -331,6 +331,53 @@ for(var i=1; i<=length; i++){
  }
  }
 
+
+// Task6
+
+//a
+document.write("<h4>Counting:</h4>");
+for(i=1; i<=15; i++){
+document.write(i+ ",");
+}
+document.write("<br>");
+
+//b
+document.write("<h4>Reverse: </h4>");
+
+document.write("<br>");
+
+// c
+document.write("<h4>Even:</h4>");
+for(i=0; i<=20; i++){
+// let's divide the value by 2.
+// if the remainder is zero then it's an even number.
+if(i % 2  == 0){
+document.write(i+ ",");
+}
+}
+document.write("<br>");
+
+// d
+document.write("<h4>Odd: </h4>");
+for(i=0; i<=20; i++){
+// let's i+1 divide the value by 2.
+// if the remainder is zero then it's an odd number.
+if((i + 1) % 2  == 0){
+document.write(i+ ",");
+}
+}
+document.write("<br>");
+
+//e
+document.write("<h4>Series: </h4>");
+var k;
+for(i=2; i<=20; i++){
+if(i % 2  == 0){
+document.write(i+ "k" + ",");
+}
+}
+document.write("<br>");
+
   //Task7
 var A = ["cake", "apple pie", "cookie", "chips", "patties"];
  var i = prompt("Welcome to ABC Bakery, what do you wanr to order sir ma'am?");
@@ -348,6 +395,20 @@ if (i === A[0]) {
 else{
 	document.write("We are sorry. " +i+ " is not available in our bakery");
 }
+document.write("<br><br>");
+
+// Task8
+var largeNumber= [24, 53, 78, 91, 12];
+document.write("Array items: " +largeNumber);
+var largestNumber = Math.max(24, 53, 78, 91, 12);document.write("<br>");
+document.write("The largest number is " +largestNumber);
+document.write("<br><br>");
+
+// Task9
+var smallNumber= [24, 53, 78, 91, 12];
+document.write("Array items: " +smallNumber);
+var smallestNumber = Math.min(24, 53, 78, 91, 12);document.write("<br>");
+document.write("The smallest number is " +smallestNumber);
 document.write("<br><br>");
 
 //Task 10
@@ -404,7 +465,7 @@ var number,bestActors,bestBooks;
 var array,lotteryNames,$studentNames,Teachers,animal_foods;
 
 // Illegal variables
-// var fruits Names, 4colleges, var, alert, let; 
+// var fruits Names, 4collegesNames, 123, var, alert, let; 
 
 // Task3
 //a
@@ -425,6 +486,14 @@ document.write("Variable names should not be JS keywords");
 document.write("<br><br>");
 
 
+// chapter12-13
+// Task6
 
-
-
+var greeting;
+var hour = 13;
+if (hour < 18) {
+alert(greeting = "Good day");
+}//add this curly brace
+else{//also add this curly brace
+alert(greeting = "Good evening");
+}
