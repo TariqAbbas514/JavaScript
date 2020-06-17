@@ -394,13 +394,35 @@ document.write(visitorName+ " ordered " +productQuantity+ " " +productTitle+ " o
 
 document.write("<br><br>");
 
+// chapter 4 VARIABLE NAMES: Legal & Illegal
 
+// Task1
+var number,bestActors,bestBooks;
 
+// Task2
+//leggal variables
+var array,lotteryNames,$studentNames,Teachers,animal_foods;
 
+// Illegal variables
+// var fruits Names, 4colleges, var, alert, let; 
 
+// Task3
+//a
+document.write("<h2>Rules for naming JS variables</h2>");
 
+//b
+document.write("Variable names can only contain, numbers, $, letters and _. For example: $my_1stVariable");
+document.write("<br>");
+//c
+document.write("Variable must begin with a letter, $ or _. For example: name, $name, _name");
+document.write("<br>");
+//d
+document.write("Variable names are case sensitive");
+document.write("<br>");
 
-
+//e
+document.write("Variable names should not be JS keywords");
+document.write("<br><br>");
 
 
 
