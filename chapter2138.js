@@ -305,3 +305,13 @@ for (var i = start; i <= end; i++){
 }
 }
 counting();
+
+
+// Task9
+function triangleArea(width, height){
+	var width = prompt("Enter width of triangle:");
+	var height = prompt("Enter height of triangle:");
+	var Area = width*height;
+	document.write(Area);
+}
+triangleArea();
