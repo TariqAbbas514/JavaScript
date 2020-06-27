@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style>
+		h1{
+				text-align: center;
+		}
+		.main{
+			border-radius: 2px;
+			border: 2px solid #000;
+			width: 340px;
+			margin: 0 auto;
+			background-color: grey;
+		}
+		input{
+			width: 96.5%;
+			height: 80px;
+			margin: 2px;
+		background-color: black;
+		color: #fff;
+		font-size: 50px;
+		}
+		.btn{
+			background-color: orange;
+			border-radius: 50%;
+			margin: 1px;
+			width: 80px;
+			height: 80px;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+<h1>Calculator</h1>
+	<div class="main">
+
+	<div>
+		<input type="text" id= "result" name="result">
+	</div>
+	<div>
+<button class="btn" onclick="getNum('7')">7</button>
+<button class="btn" onclick="getNum('8')">8</button>
+<button class="btn" onclick="getNum('9')">9</button>
+<button class="btn" onclick="getNum('*')">*</button>
+    </div>
+   
+	<div>
+<button class="btn" onclick="getNum('4')">4</button>
+<button class="btn" onclick="getNum('5')">5</button>
+<button class="btn" onclick="getNum('6')">6</button>
+<button class="btn" onclick="getNum('-')">-</button>
+    </div>
+
+    <div>
+<button class="btn" onclick="getNum('1')">1</button>
+<button class="btn" onclick="getNum('2')">2</button>
+<button class="btn" onclick="getNum('3')">3</button>
+<button class="btn" onclick="getNum('+')" >+</button>
+    </div>
+
+    <div>
+<button class="btn" onclick="clearResult()">C</button>
+<button class="btn" onclick="getNum('0')">0</button>
+<button class="btn" onclick="getNum('/')">/</button>
+<button class="btn" onclick="getResult()">=</button>
+    </div>
+</div>
+<script type="text/javascript">
+	function getNum(num){
+		var result = document.getElementById("result");
+		result.value += num;
+	}
+	function getNumber() {
+    var result = document.getElementById("result");
+    result.value = "";
+}
+
+function clearResult(){
+	var result = document.getElementById("result");
+	result.value = "";
+}
+function getResult(){
+	var result = document.getElementById("result");
+	result.value = eval(result.value)
+
+}
+
+</script>
+</body>
+</html>
